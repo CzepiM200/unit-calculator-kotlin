@@ -3,4 +3,9 @@
     <string name="tab_text_1">Distance</string>
     <string name="tab_text_2">Surface</string>
     <string name="tab_text_3">Volume</string>
+    <string-array name="distance_units">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+    </string-array>
 </resources>

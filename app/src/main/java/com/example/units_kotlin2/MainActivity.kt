@@ -28,18 +28,9 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
+        //tabs.setTabMode(TabLayout.MODE_SCROLLABLE)
         tabs.getTabAt(0)!!.setIcon(R.drawable.ic_baseline_all_inclusive_24)
         tabs.getTabAt(1)!!.setIcon(R.drawable.ic_baseline_api_24)
         tabs.getTabAt(2)!!.setIcon(R.drawable.ic_baseline_local_drink_24)
-        val fab: FloatingActionButton = findViewById(R.id.fab)
-
-
-
-
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
     }
 }
