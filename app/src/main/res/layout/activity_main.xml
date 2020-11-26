@@ -9,6 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/purple_600"
         android:gravity="center_horizontal"
         android:theme="@style/Theme.Units_kotlin2.AppBarOverlay">
 
@@ -29,6 +30,7 @@
             android:background="?attr/colorPrimary"
             android:isScrollContainer="false"
             app:tabIconTint="@color/white"
+            app:tabIndicatorColor="@color/purple_200"
             app:tabRippleColor="@color/white"
             app:tabTextColor="@color/white" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -39,5 +41,5 @@
         android:layout_height="match_parent"
         android:isScrollContainer="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-    
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
