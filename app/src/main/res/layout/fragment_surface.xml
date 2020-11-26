@@ -3,19 +3,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.DistanceFragment">
+    tools:context=".fragments.SurfaceFragment">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:text="Surface"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"/>
-    </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/inputDistance"
+                        android:layout_width="307dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+
+                    <Spinner
+                        android:id="@+id/distance_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:entries="@array/surface_units" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/sur_km"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_horizontal|center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sur_ha"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_horizontal|center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sur_a"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_horizontal|center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sur_m"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_horizontal|center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sur_dm"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_horizontal|center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sur_cm"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center_horizontal|center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="0"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

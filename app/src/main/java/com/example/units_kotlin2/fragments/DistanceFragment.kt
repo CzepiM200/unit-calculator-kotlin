@@ -34,7 +34,6 @@ class DistanceFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater!!.inflate(R.layout.fragment_distance, container, false)
-        //view.inputDistance.setTextColor(32)
         view.distance_spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(
@@ -61,7 +60,6 @@ class DistanceFragment : Fragment() {
                 setNewValues(spinnerValue, s.toString())
             }
         })
-        //view.inputDistance.addTextChangedListener
         return view;
     }
 
