@@ -77,7 +77,7 @@ class DistanceFragment : Fragment() {
             "mm" -> tempPow = -3
             "µm" -> tempPow = -6
             "nm" -> tempPow = -9
-            "nm" -> tempPow = -12
+            "pm" -> tempPow = -12
         }
 
         exp = tempPow
@@ -89,8 +89,8 @@ class DistanceFragment : Fragment() {
         dst_cm.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 2).toDouble())))) + " cm"
         dst_mm.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 3).toDouble())))) + " mm"
         dst_um.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 6).toDouble())))) + " µm"
-        dst_nm.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 9).toDouble())))) + " dm"
-        dst_pm.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 12).toDouble())))) + " nm"
+        dst_nm.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 9).toDouble())))) + " nm"
+        dst_pm.text = "%.4f".format((number.toDouble() * 10.0.pow(((tempPow + 12).toDouble())))) + " pm"
 
     }
 }
